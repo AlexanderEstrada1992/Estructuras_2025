@@ -1,17 +1,27 @@
-﻿Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
-Console.WriteLine("=============================");
-Console.WriteLine();
-
-Cuadrado mi_cuadrado = new Cuadrado(4);
-System.Console.WriteLine("El área del cuadrado es: " + mi_cuadrado.area());
+﻿System.Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
+System.Console.WriteLine("=============================");
+System.Console.WriteLine("REGISTRO DE ESTUDIANTE");
 System.Console.WriteLine();
 
-Asignatura matemáticas = new Asignatura("matematicas", [12, 13, 18]);
+int id = 1;
+string nombres = "Juan";
+string apellidos = "Pérez";
+string direccion = "Calle Amazonas y Río Napo";
 
-System.Console.WriteLine(matemáticas.getAsignatura());
-System.Console.WriteLine(matemáticas.getNotas());
+string[] telefonos = new string[3];
+telefonos[0] = "0987654321";
+telefonos[1] = "022345678";
+telefonos[2] = "0934567890";
 
-double[] minotas = matemáticas.getNotas();
-System.Console.WriteLine(minotas[0]);
-System.Console.WriteLine(minotas[1]);
-System.Console.WriteLine(minotas[2]);
+Estudiante estudiante1 = new Estudiante(id, nombres, apellidos, direccion, telefonos);
+
+System.Console.WriteLine("ID: " + estudiante1.getId());
+System.Console.WriteLine("Nombres: " + estudiante1.getNombres());
+System.Console.WriteLine("Apellidos: " + estudiante1.getApellidos());
+System.Console.WriteLine("Dirección: " + estudiante1.getDireccion());
+
+System.Console.WriteLine("Teléfonos:");
+string[] telfs = estudiante1.getTelefonos();
+System.Console.WriteLine("- " + telfs[0]);
+System.Console.WriteLine("- " + telfs[1]);
+System.Console.WriteLine("- " + telfs[2]);
