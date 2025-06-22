@@ -3,7 +3,9 @@ System.Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
 System.Console.WriteLine("=============================");
 System.Console.WriteLine();
 
-
+// Nombre del programa
+System.Console.WriteLine("Agenda Telefónica");
+System.Console.WriteLine("==================");
 
 
 
