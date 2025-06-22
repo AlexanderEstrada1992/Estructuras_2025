@@ -41,6 +41,13 @@ while (continuar)
     }
 }
 
+// Reiniciar valores para realizar una búsqueda
+continuar = true;
+bool encontrado = false;
+i = 0;
+
+
+
 
 
 
