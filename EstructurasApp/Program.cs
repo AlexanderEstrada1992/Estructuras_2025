@@ -10,6 +10,9 @@ System.Console.WriteLine("==================");
 // Definir el tamaño máximo del vector de contactos
 int max = 10;
 
+// Creación de un vector para almacenar los contactos
+Contacto[] agenda = new Contacto[max];
+
 
 
 
