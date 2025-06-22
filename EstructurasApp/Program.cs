@@ -23,6 +23,24 @@ agenda[0] = c1;
 agenda[1] = c2;
 agenda[2] = c3;
 
+// Imprimir todos los contactos registrados
+bool continuar = true;
+int i = 0;
+while (continuar)
+{
+    if (agenda[i] != null) // Si hay un contacto en la posición i
+    {
+        Console.WriteLine("Nombre: " + agenda[i].Nombre +
+                          " | Teléfono: " + agenda[i].Telefono +
+                          " | Correo: " + agenda[i].Correo);
+        i++; // Avanzar al siguiente índice
+    }
+    else
+    {
+        continuar = false; // Terminar el ciclo si no hay más contactos
+    }
+}
+
 
 
 
