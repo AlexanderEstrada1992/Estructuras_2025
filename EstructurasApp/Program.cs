@@ -69,6 +69,11 @@ while (continuar)
     }
 }
 
+// Mostrar mensaje si no se encontró el contacto
+if (!encontrado)
+{
+    System.Console.WriteLine("\nEl contacto no existe.");
+}
 
 
 
