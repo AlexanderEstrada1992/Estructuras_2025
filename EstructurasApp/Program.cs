@@ -7,7 +7,8 @@ System.Console.WriteLine();
 System.Console.WriteLine("Agenda Telefónica");
 System.Console.WriteLine("==================");
 
-
+// Definir el tamaño máximo del vector de contactos
+int max = 10;
 
 
 
