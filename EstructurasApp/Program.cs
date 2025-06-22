@@ -1,7 +1,11 @@
-﻿// Mostrar encabezado institucional
+﻿// Carátula del Practico Experimental
 System.Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
 System.Console.WriteLine("=============================");
 System.Console.WriteLine();
+
+
+
+
 
 
 
