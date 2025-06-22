@@ -13,6 +13,11 @@ int max = 10;
 // Creación de un vector para almacenar los contactos
 Contacto[] agenda = new Contacto[max];
 
+// Crear tres contactos usando el constructor de la clase Contacto
+Contacto c1 = new Contacto("Alex Estrada", "0987654321", "alex@mail.com");
+Contacto c2 = new Contacto("María López", "0991234567", "maria@mail.com");
+Contacto c3 = new Contacto("Carlos Pérez", "0976543210", "carlos@mail.com");
+
 
 
 
