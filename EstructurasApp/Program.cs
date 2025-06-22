@@ -46,7 +46,28 @@ continuar = true;
 bool encontrado = false;
 i = 0;
 
+// Nombre a buscar
+string consulta = "Alex Estrada";
 
+// Búsqueda de contacto por nombre
+while (continuar)
+{
+    if (agenda[i] != null)
+    {
+        if (agenda[i].Nombre == consulta)
+        {
+            encontrado = true; // Se encontró el contacto
+            Console.WriteLine("\nContacto encontrado: " + agenda[i].Nombre +
+                              " | Teléfono: " + agenda[i].Telefono +
+                              " | Correo: " + agenda[i].Correo);
+        }
+        i++;
+    }
+    else
+    {
+        continuar = false; // Terminar el ciclo si no hay más contactos
+    }
+}
 
 
 
