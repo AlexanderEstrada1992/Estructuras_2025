@@ -18,6 +18,11 @@ Contacto c1 = new Contacto("Alex Estrada", "0987654321", "alex@mail.com");
 Contacto c2 = new Contacto("María López", "0991234567", "maria@mail.com");
 Contacto c3 = new Contacto("Carlos Pérez", "0976543210", "carlos@mail.com");
 
+// Asignar los contactos al vector
+agenda[0] = c1;
+agenda[1] = c2;
+agenda[2] = c3;
+
 
 
 
