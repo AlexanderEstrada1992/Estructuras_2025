@@ -48,6 +48,11 @@ for (int i = 0; i < asignaturas.Count; i++)
     System.Console.WriteLine($"En {asignaturas[i]} has sacado {notas[i]}");
 }
 
+System.Console.WriteLine("  Ejercicio 4 - Lotería");
+System.Console.WriteLine("=============================");
+
+
+
 // System.Console.WriteLine("  Listas");
 // System.Console.WriteLine("=============================");
 
