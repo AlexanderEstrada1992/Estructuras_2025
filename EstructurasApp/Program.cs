@@ -42,7 +42,11 @@ foreach (string asignatura in asignaturas)
     notas.Add(nota);
 }
 
-
+// Mostrar resultados
+for (int i = 0; i < asignaturas.Count; i++)
+{
+    System.Console.WriteLine($"En {asignaturas[i]} has sacado {notas[i]}");
+}
 
 // System.Console.WriteLine("  Listas");
 // System.Console.WriteLine("=============================");
