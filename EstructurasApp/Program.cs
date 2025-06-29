@@ -77,6 +77,14 @@ foreach (int numero in numerosGanadores)
 System.Console.WriteLine("  Ejercicio 5 - Números Inversos");
 System.Console.WriteLine("=============================");
 
+// Lista del 1 al 10
+List<int> numeros = [];
+
+for (int i = 1; i <= 10; i++)
+{
+    numeros.Add(i);
+}
+
 
 
 
