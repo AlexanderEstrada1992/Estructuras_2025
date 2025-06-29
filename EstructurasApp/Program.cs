@@ -51,6 +51,9 @@ for (int i = 0; i < asignaturas.Count; i++)
 System.Console.WriteLine("  Ejercicio 4 - Lotería");
 System.Console.WriteLine("=============================");
 
+// Crear lista númerosGanadores
+List<int> numerosGanadores = [];
+
 
 
 // System.Console.WriteLine("  Listas");
