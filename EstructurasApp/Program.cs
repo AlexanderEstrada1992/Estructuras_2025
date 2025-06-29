@@ -14,7 +14,7 @@ foreach (string asignatura in asignaturas)
     System.Console.WriteLine(asignatura);
 }
 
-
+// Carátula ejercicio 2
 System.Console.WriteLine("  Ejercicio 2 - Asignaturas con mensaje");
 System.Console.WriteLine("=============================");
 
@@ -27,6 +27,7 @@ foreach (string asignatura in asignaturas con mensaje)
     System.Console.WriteLine($"Yo estudio {asignatura}");
 }
 
+// Carátula ejercicio 3
 System.Console.WriteLine("  Ejercicio 3 - Notas por Asignatura");
 System.Console.WriteLine("=============================");
 
@@ -48,6 +49,7 @@ for (int i = 0; i < asignaturas.Count; i++)
     System.Console.WriteLine($"En {asignaturas[i]} has sacado {notas[i]}");
 }
 
+// Carátula ejercicio 4
 System.Console.WriteLine("  Ejercicio 4 - Lotería");
 System.Console.WriteLine("=============================");
 
@@ -70,6 +72,13 @@ foreach (int numero in numerosGanadores)
 {
     System.Console.WriteLine(numero);
 }
+
+// Carátula ejercicio 5
+System.Console.WriteLine("  Ejercicio 5 - Números Inversos");
+System.Console.WriteLine("=============================");
+
+
+
 
 
 // System.Console.WriteLine("  Listas");
