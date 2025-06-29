@@ -30,6 +30,9 @@ foreach (string asignatura in asignaturas con mensaje)
 System.Console.WriteLine("  Ejercicio 3 - Notas por Asignatura");
 System.Console.WriteLine("=============================");
 
+// Crear una colección de strings llamada asignaturas
+List<string> asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"];
+List<double> notas = [];
 
 // System.Console.WriteLine("  Listas");
 // System.Console.WriteLine("=============================");
