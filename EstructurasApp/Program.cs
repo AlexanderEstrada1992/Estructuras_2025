@@ -34,6 +34,16 @@ System.Console.WriteLine("=============================");
 List<string> asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"];
 List<double> notas = [];
 
+// Crear foreach
+foreach (string asignatura in asignaturas)
+{
+    System.Console.Write($"Ingrese la nota de {asignatura}: ");
+    double nota = Convert.ToDouble(Console.ReadLine());
+    notas.Add(nota);
+}
+
+
+
 // System.Console.WriteLine("  Listas");
 // System.Console.WriteLine("=============================");
 
