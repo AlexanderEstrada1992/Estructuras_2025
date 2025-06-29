@@ -5,7 +5,8 @@ System.Console.WriteLine();
 System.Console.WriteLine("  Ejercicio 1 - Asignaturas");
 System.Console.WriteLine("=============================");
 
-
+// Crear una colección de strings llamada asignaturas
+List<string> asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"];
 
 
 
