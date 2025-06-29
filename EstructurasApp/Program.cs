@@ -8,7 +8,11 @@ System.Console.WriteLine("=============================");
 // Crear una colección de strings llamada asignaturas
 List<string> asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"];
 
-
+// Imprimir la lista
+foreach (string asignatura in asignaturas)
+{
+    System.Console.WriteLine(asignatura);
+}
 
 
 
