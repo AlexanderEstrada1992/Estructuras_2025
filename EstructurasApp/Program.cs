@@ -85,7 +85,9 @@ for (int i = 1; i <= 10; i++)
     numeros.Add(i);
 }
 
-
+// Mostrar en orden inverso separados por comas
+numeros.Reverse();
+System.Console.WriteLine(string.Join(", ", numeros));
 
 
 
