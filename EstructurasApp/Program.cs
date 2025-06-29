@@ -14,14 +14,21 @@ foreach (string asignatura in asignaturas)
     System.Console.WriteLine(asignatura);
 }
 
+
 System.Console.WriteLine("  Ejercicio 2 - Asignaturas con mensaje");
 System.Console.WriteLine("=============================");
 
 // Crear una colección de strings llamada asignaturas con mensaje
 List<string> asignaturas con mensaje = ["Matemáticas", "Física", "Química", "Historia", "Lengua"];
 
+// Imprimir asignatura con mensaje
+foreach (string asignatura in asignaturas con mensaje)
+{
+    System.Console.WriteLine($"Yo estudio {asignatura}");
+}
 
-
+System.Console.WriteLine("  Ejercicio 3 - Notas por Asignatura");
+System.Console.WriteLine("=============================");
 
 
 // System.Console.WriteLine("  Listas");
