@@ -63,6 +63,13 @@ for (int i = 0; i < 6; i++)
     numerosGanadores.Add(numero);
 }
 
+// Ordenar y mostrar
+numerosGanadores.Sort();
+System.Console.WriteLine("Números ganadores ordenados:");
+foreach (int numero in numerosGanadores)
+{
+    System.Console.WriteLine(numero);
+}
 
 
 // System.Console.WriteLine("  Listas");
