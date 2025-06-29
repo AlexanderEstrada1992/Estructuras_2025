@@ -54,6 +54,15 @@ System.Console.WriteLine("=============================");
 // Crear lista númerosGanadores
 List<int> numerosGanadores = [];
 
+// Crear for
+System.Console.WriteLine("Ingrese 6 números ganadores de la lotería:");
+for (int i = 0; i < 6; i++)
+{
+    System.Console.Write($"Número {i + 1}: ");
+    int numero = Convert.ToInt32(Console.ReadLine());
+    numerosGanadores.Add(numero);
+}
+
 
 
 // System.Console.WriteLine("  Listas");
