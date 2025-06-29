@@ -1,4 +1,4 @@
-﻿// Carátula del Practico Experimental
+﻿// Carátula Tarea de la Semana 5
 System.Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
 System.Console.WriteLine("=============================");
 System.Console.WriteLine();
