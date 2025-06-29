@@ -14,7 +14,8 @@ foreach (string asignatura in asignaturas)
     System.Console.WriteLine(asignatura);
 }
 
-
+System.Console.WriteLine("  Ejercicio 2 - Asignaturas con mensaje");
+System.Console.WriteLine("=============================");
 
 
 
