@@ -1,7 +1,8 @@
-public class ceListas
+public class <<ponerNombre>>
 {
     public static void run()
     {
-        
+
     }
+
 }
