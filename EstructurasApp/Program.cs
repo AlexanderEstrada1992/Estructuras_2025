@@ -6,6 +6,11 @@
         Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
         Console.WriteLine("=============================");
         Console.WriteLine();
+
+         // Verificación de paréntesis balanceados
+        Console.WriteLine("\nVerificación de paréntesis:");
+        string expresion = "{7 + (8 * 5) - [(9 - 7) + (4 + 1)]}";
+        BalanceoParentesis.VerificarBalanceo(expresion);
     }
 }
 
