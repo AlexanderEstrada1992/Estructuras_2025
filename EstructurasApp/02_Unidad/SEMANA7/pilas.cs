@@ -20,7 +20,7 @@ public class pilas
 
         int ultimo = numeros.Peek();
         Console.WriteLine("el último elemento es: " + ultimo);
-        Console.WriteLine("ültimo elemento {0} y el doble de último es {1}", ultimo, ultimo*2);
+        Console.WriteLine("ültimo elemento {0} y el doble de último es {1}", ultimo, ultimo * 2);
         Console.WriteLine($"ültimo elemento es: {ultimo}");
 
         //Eliminar elementos
@@ -37,4 +37,14 @@ public class pilas
 
         System.Console.WriteLine("elemento eliminado: " + eliminado);
     }
+
+    public static void ImprimirPila(Stack<string> pila)
+    {
+        System.Console.WriteLine("Los elementos de la pila son: ");
+        foreach (var item in pila)
+        {
+            System.Console.WriteLine(item);
+        }
+    }
+    
 }
