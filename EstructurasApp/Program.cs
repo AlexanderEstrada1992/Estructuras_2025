@@ -11,7 +11,11 @@ numeros.Push(2);
 numeros.Push(20);
 numeros.Push(4);
 
-
+//Recorrer los elementos de la pila
+foreach (var item in numeros)
+{
+    System.Console.WriteLine(item);
+}
 
 
 
