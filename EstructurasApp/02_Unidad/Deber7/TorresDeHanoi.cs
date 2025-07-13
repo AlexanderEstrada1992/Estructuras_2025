@@ -15,3 +15,8 @@ public class TorresDeHanoi
 
         // Paso 2: Mover el disco mayor al destino
         Console.WriteLine($"Mover disco {n} de {origen} a {destino}");
+
+        // Paso 3: Mover los n-1 discos desde auxiliar a destino
+        ResolverHanoi(n - 1, auxiliar, destino, origen);
+    }
+}
