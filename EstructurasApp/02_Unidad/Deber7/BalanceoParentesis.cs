@@ -26,7 +26,7 @@ public class BalanceoParentesis
 
                 char tope = pila.Pop(); // Extraemos el último abierto
 
-                 // Verificamos si el tipo de cierre no corresponde
+                // Verificamos si el tipo de cierre no corresponde
                 if ((caracter == ')' && tope != '(') ||
                     (caracter == '}' && tope != '{') ||
                     (caracter == ']' && tope != '['))
@@ -37,4 +37,14 @@ public class BalanceoParentesis
             }
         }
 
-        
+        // Si está balanceado y no queda nada pendiente en la pila
+        if (balanceado && pila.Count == 0)
+        {
+            Console.WriteLine("Fórmula balanceada.");
+        }
+        else
+        {
+            Console.WriteLine("Fórmula NO balanceada.");
+        }
+    }
+}
