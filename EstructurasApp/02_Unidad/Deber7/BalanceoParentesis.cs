@@ -25,3 +25,16 @@ public class BalanceoParentesis
                 }
 
                 char tope = pila.Pop(); // Extraemos el último abierto
+
+                 // Verificamos si el tipo de cierre no corresponde
+                if ((caracter == ')' && tope != '(') ||
+                    (caracter == '}' && tope != '{') ||
+                    (caracter == ']' && tope != '['))
+                {
+                    balanceado = false;
+                    break;
+                }
+            }
+        }
+
+        
