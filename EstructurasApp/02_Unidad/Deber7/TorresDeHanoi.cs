@@ -10,4 +10,7 @@ public class TorresDeHanoi
             return;
         }
 
+         // Paso 1: Mover n-1 discos al auxiliar
+        ResolverHanoi(n - 1, origen, auxiliar, destino);
+
         
