@@ -4,6 +4,8 @@ System.Console.WriteLine();
 System.Console.WriteLine("Pilas");
 System.Console.WriteLine("=============================");
 
+Stack<int> numeros = new Stack<int>();
+
 
 
 
