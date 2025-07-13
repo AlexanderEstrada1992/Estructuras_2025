@@ -1,9 +1,10 @@
-﻿Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
-Console.WriteLine("=============================");
-Console.WriteLine();
-
-pilas.run();
-
+﻿class Program
+{
+    static void Main(string[] args)
+    {
+        
+    }
+}
 
 
 
@@ -12,7 +13,7 @@ pilas.run();
 //EjemploAgenda.run();
 //Agenda.run();
 //Deber6.run();
-
+//pilas.run();
 
 
 
