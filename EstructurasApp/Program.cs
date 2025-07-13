@@ -22,13 +22,19 @@ Console.WriteLine("el último elemento es: " + ultimo);
 Console.WriteLine("ültimo elemento {0} y el doble de último es {1}", ultimo, ultimo*2);
 Console.WriteLine($"ültimo elemento es: {ultimo}");
 
+//Eliminar elementos
+numeros.Pop();
+int eliminado = numeros.Pop();
+System.Console.WriteLine();
 
 
+//Recorrer los elementos de la pila
+foreach (int item in numeros)
+{
+    System.Console.WriteLine(item);
+}
 
-
-
-
-
+System.Console.WriteLine("elemento eliminado: " + eliminado);
 
 
 
