@@ -1,8 +1,8 @@
-﻿System.Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
-System.Console.WriteLine("=============================");
-System.Console.WriteLine();
-System.Console.WriteLine("Pilas");
-System.Console.WriteLine("=============================");
+﻿Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
+Console.WriteLine("=============================");
+Console.WriteLine();
+Console.WriteLine("Pilas");
+Console.WriteLine("=============================");
 
 Stack<int> numeros = new Stack<int>();
 
@@ -17,6 +17,10 @@ foreach (var item in numeros)
     System.Console.WriteLine(item);
 }
 
+int ultimo = numeros.Peek();
+Console.WriteLine("el último elemento es: " + ultimo);
+Console.WriteLine("ültimo elemento {0} y el doble de último es {1}", ultimo, ultimo*2);
+Console.WriteLine($"ültimo elemento es: {ultimo}");
 
 
 
