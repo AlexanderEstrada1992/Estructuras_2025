@@ -2,7 +2,10 @@
 {
     static void Main(string[] args)
     {
-        
+        // Encabezado institucional
+        Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
+        Console.WriteLine("=============================");
+        Console.WriteLine();
     }
 }
 
