@@ -22,6 +22,8 @@ public class Parque
             string persona = personas.Dequeue(); // Se atiende a la primera persona de la cola
             System.Console.WriteLine(persona + " ha ocupado el asiento número " + asiento);
             asiento++; // Pasamos al siguiente asiento
+
+            System.Console.WriteLine("Todos los asientos han sido ocupados.");
         }
      }
 }
