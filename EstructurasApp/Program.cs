@@ -36,7 +36,7 @@ Console.WriteLine();
 //Deber6.run();
 //pilas.run();
 //Program7.run();
-
+Colas.run();
 
 
 
