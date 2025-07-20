@@ -5,7 +5,7 @@ Console.WriteLine("Práctico Experimental 2");
 Console.WriteLine("=======================");
 
 
-
+Parque.run();
 
 
 
