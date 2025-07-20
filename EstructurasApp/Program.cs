@@ -1,8 +1,8 @@
 ﻿Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
 Console.WriteLine("=============================");
 Console.WriteLine();
-
-
+Console.WriteLine("Práctico Experimental 2");
+Console.WriteLine("=======================");
 
 
 
@@ -36,7 +36,7 @@ Console.WriteLine();
 //Deber6.run();
 //pilas.run();
 //Program7.run();
-Colas.run();
+//Colas.run();
 
 
 
