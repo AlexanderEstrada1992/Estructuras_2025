@@ -10,7 +10,11 @@ public class Colas
         autos.Enqueue("BMW");
 
         //autos.Dequeue();
-        autos.Dequeue();
+        string autoAtendido = autos.Dequeue(); //Extrae el primer elementos de la cola
+        
+        Console.WriteLine("Atendido: " + autoAtendido );
+        int porVender = autos.Count();
+        Console.WriteLine("tenemos " + porVender + " por vender");
 
         imprimirCola(autos);
     }
