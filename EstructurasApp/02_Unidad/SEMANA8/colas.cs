@@ -4,9 +4,13 @@ public class Colas
     {
         Queue<string> autos = new Queue<string>();
 
+        autos.Enqueue("Lada");
         autos.Enqueue("Audi");
         autos.Enqueue("Opel");
         autos.Enqueue("BMW");
+
+        //autos.Dequeue();
+        autos.Dequeue();
 
         imprimirCola(autos);
     }
