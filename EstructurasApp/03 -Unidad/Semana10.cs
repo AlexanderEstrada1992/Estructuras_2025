@@ -29,11 +29,16 @@ public class vacunas
         HashSet<string> ambasDosis = new HashSet<string>();
         ambasDosis.UnionWith(pfizer);
         ambasDosis.IntersectWith(astrazeneca);
-        
-         // Ciudadanos que solo recibieron Pfizer
+
+        // Ciudadanos que solo recibieron Pfizer
         HashSet<string> soloPfizer = new HashSet<string>();
         soloPfizer.UnionWith(pfizer);
         soloPfizer.ExceptWith(astrazeneca);
+        
+        // Ciudadanos que solo recibieron AstraZeneca
+        HashSet<string> soloAstrazeneca = new HashSet<string>();
+        soloAstrazeneca.UnionWith(astrazeneca);
+        soloAstrazeneca.ExceptWith(pfizer);
     }
 
 }
