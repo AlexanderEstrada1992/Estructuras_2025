@@ -4,7 +4,7 @@ Console.WriteLine();
 Console.WriteLine("Campaña de vacunación contra el COVID-19");
 Console.WriteLine("=======================");
 
-
+vacunas.run();
 
 
 
