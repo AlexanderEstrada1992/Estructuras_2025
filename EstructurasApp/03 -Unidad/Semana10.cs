@@ -39,12 +39,26 @@ public class vacunas
         HashSet<string> soloAstrazeneca = new HashSet<string>();
         soloAstrazeneca.UnionWith(astrazeneca);
         soloAstrazeneca.ExceptWith(pfizer);
-        
+
         // Ciudadanos que no se han vacunado
         HashSet<string> noVacunados = new HashSet<string>();
         noVacunados.UnionWith(ciudadanos);
         noVacunados.ExceptWith(pfizer);
         noVacunados.ExceptWith(astrazeneca);
+        
+        // Resultados
+        Console.WriteLine("Resultados de la campaña de vacunación");
+        Console.WriteLine("=====================================");
+        Console.WriteLine();
+
+        Console.WriteLine("Total de ciudadanos: " + ciudadanos.Count);
+        Console.WriteLine("Vacunados con Pfizer: " + pfizer.Count);
+        Console.WriteLine("Vacunados con AstraZeneca: " + astrazeneca.Count);
+        Console.WriteLine("Ambas dosis: " + ambasDosis.Count);
+        Console.WriteLine("Solo Pfizer: " + soloPfizer.Count);
+        Console.WriteLine("Solo AstraZeneca: " + soloAstrazeneca.Count);
+        Console.WriteLine("No vacunados: " + noVacunados.Count);
+        Console.WriteLine();
     }
 
 }
