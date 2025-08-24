@@ -25,7 +25,10 @@ public class vacunas
             astrazeneca.Add("persona" + random.Next(1, 501));
         }
         
-        
+         // Ciudadanos con ambas dosis (Pfizer y AstraZeneca)
+        HashSet<string> ambasDosis = new HashSet<string>();
+        ambasDosis.UnionWith(pfizer);
+        ambasDosis.IntersectWith(astrazeneca);
     }
 
 }
