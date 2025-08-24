@@ -45,7 +45,7 @@ public class vacunas
         noVacunados.UnionWith(ciudadanos);
         noVacunados.ExceptWith(pfizer);
         noVacunados.ExceptWith(astrazeneca);
-        
+
         // Resultados
         Console.WriteLine("Resultados de la campaña de vacunación");
         Console.WriteLine("=====================================");
@@ -59,6 +59,13 @@ public class vacunas
         Console.WriteLine("Solo AstraZeneca: " + soloAstrazeneca.Count);
         Console.WriteLine("No vacunados: " + noVacunados.Count);
         Console.WriteLine();
+        
+         // Mostrar listado de ciudadanos no vacunados
+        Console.WriteLine("Listado de ciudadanos NO vacunados:");
+        foreach (var item in noVacunados)
+        {
+            Console.WriteLine(item);
+        }
     }
 
 }
