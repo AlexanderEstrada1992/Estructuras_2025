@@ -17,6 +17,13 @@ public class vacunas
         {
             pfizer.Add("persona" + random.Next(1, 501));
         }
+
+        // Conjunto de vacunados con AstraZeneca (75 ciudadanos)
+        HashSet<string> astrazeneca = new HashSet<string>();
+        while (astrazeneca.Count < 75)
+        {
+            astrazeneca.Add("persona" + random.Next(1, 501));
+        }
         
         
     }
