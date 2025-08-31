@@ -64,7 +64,16 @@ public class Diccionario
                 Console.Write("Ingrese la traducción en español: ");
                 string es = Console.ReadLine().ToLower();
                 
-                
+                // Verificamos si la palabra ya existe
+                if (palabras.ContainsKey(en))
+                {
+                    Console.WriteLine("La palabra ya existe en el diccionario.");
+                }
+                else
+                {
+                    palabras.Add(en, es); // Se agrega la nueva palabra
+                    Console.WriteLine("Palabra agregada con éxito.");
+                }
             }
         }
     }
