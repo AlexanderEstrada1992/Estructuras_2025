@@ -1,10 +1,11 @@
 ﻿Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
 Console.WriteLine("=============================");
 Console.WriteLine();
-Console.WriteLine("Campaña de vacunación contra el COVID-19");
+Console.WriteLine("Traductor básico Inglés - Español");
 Console.WriteLine("=======================");
 
-vacunas.run();
+
+
 
 
 
@@ -35,7 +36,7 @@ vacunas.run();
 //Program7.run();
 //Colas.run();
 //Parque.run();
-
+//vacunas.run();
 
 
 
