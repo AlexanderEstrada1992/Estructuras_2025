@@ -3,19 +3,9 @@ Console.WriteLine("=============================");
 Console.WriteLine();
 Console.WriteLine("Traductor básico Inglés - Español");
 Console.WriteLine("=======================");
+Console.WriteLine();
 
 Diccionario.run();
-
-
-
-
-
-
-
-
-
-
-
 
 
 
