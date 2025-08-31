@@ -1,0 +1,21 @@
+public class Diccionario
+{
+    public static void run()
+    {
+        // 1. Diccionario inicial
+        Dictionary<string, string> palabras = new Dictionary<string, string>()
+        {
+            {"time", "tiempo"},
+            {"person", "persona"},
+            {"year", "año"},
+            {"way", "camino"},
+            {"day", "día"},
+            {"thing", "cosa"},
+            {"man", "hombre"},
+            {"world", "mundo"},
+            {"life", "vida"},
+            {"eye", "ojo"}
+        };
+    }
+
+}
