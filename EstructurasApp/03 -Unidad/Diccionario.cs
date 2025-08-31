@@ -23,12 +23,22 @@ public class Diccionario
         // 2. Menú interactivo
         while (opcion != 0)
         {
-             Console.WriteLine("\n==================== MENÚ ====================");
+            Console.WriteLine("\n==================== MENÚ ====================");
             Console.WriteLine("1. Traducir una frase");
             Console.WriteLine("2. Agregar palabras al diccionario");
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
-            opcion = int.Parse(Console.ReadLine()); 
+            opcion = int.Parse(Console.ReadLine());
+
+            // Opción 1: Traducir una frase
+            if (opcion == 1)
+            {
+                 Console.Write("\nIngrese una frase: ");
+                string frase = Console.ReadLine().ToLower(); // Convertimos a minúsculas
+                string[] palabrasFrase = frase.Split(' ');   // Separamos la frase por palabras
+
+                Console.WriteLine("\nTraducción:");
+            }
         }
     }
 
