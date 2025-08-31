@@ -16,6 +16,9 @@ public class Diccionario
             {"life", "vida"},
             {"eye", "ojo"}
         };
+
+        // Variable para controlar el menú
+        int opcion = -1;
     }
 
 }
