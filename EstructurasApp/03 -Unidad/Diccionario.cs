@@ -77,9 +77,15 @@ public class Diccionario
             }
 
             // Opción 0: Salir del programa
-             else if (opcion == 0)
+            else if (opcion == 0)
             {
                 Console.WriteLine("Saliendo del programa...");
+            }
+
+            // Opción no válida
+             else
+            {
+                Console.WriteLine("Opción no válida.");
             }
         }
     }
