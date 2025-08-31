@@ -83,7 +83,7 @@ public class Diccionario
             }
 
             // Opción no válida
-             else
+            else
             {
                 Console.WriteLine("Opción no válida.");
             }
