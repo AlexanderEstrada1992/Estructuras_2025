@@ -4,7 +4,7 @@ Console.WriteLine();
 Console.WriteLine("Traductor básico Inglés - Español");
 Console.WriteLine("=======================");
 
-
+Diccionario.run();
 
 
 
