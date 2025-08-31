@@ -52,6 +52,19 @@ public class Diccionario
                         Console.Write(palabra + " ");
                     }
                 }
+                Console.WriteLine();
+            }
+
+            // Opción 2: Agregar palabras
+            else if (opcion == 2)
+            {
+                Console.Write("\nIngrese la palabra en inglés: ");
+                string en = Console.ReadLine().ToLower();
+
+                Console.Write("Ingrese la traducción en español: ");
+                string es = Console.ReadLine().ToLower();
+                
+                
             }
         }
     }
