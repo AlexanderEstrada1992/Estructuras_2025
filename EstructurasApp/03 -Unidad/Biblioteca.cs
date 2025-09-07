@@ -46,7 +46,19 @@ public class Biblioteca
                     }
                     else
                     {
-                        
+                      // Registrar libro (mapa: título -> autor y año)
+                        Console.Write("Ingrese autor del libro: ");
+                        string autor = Console.ReadLine();
+
+                        Console.Write("Ingrese año de publicación: ");
+                        int anio = int.Parse(Console.ReadLine());
+
+                        titulos[contador] = titulo;
+                        autores[contador] = autor;
+                        anios[contador] = anio;
+                        contador++;
+
+                        Console.WriteLine("Libro registrado correctamente.\n");  
                     }
                }
             }
