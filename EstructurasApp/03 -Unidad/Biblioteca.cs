@@ -115,6 +115,12 @@ public class Biblioteca
                 Console.WriteLine("Saliendo del programa...");
             }
 
+            // Opción no válida
+            else
+            {
+                Console.WriteLine("Opción no válida.");
+            }
+
         }
     }
 
