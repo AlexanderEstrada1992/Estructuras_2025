@@ -28,7 +28,7 @@ public class Biblioteca
                 {
                     Console.Write("Ingrese título del libro: ");
                     string titulo = Console.ReadLine();
-                    
+
                     // Verificar si el título ya existe (conjunto)
                     bool existe = false;
                     for (int i = 0; i < contador; i++)
@@ -46,7 +46,7 @@ public class Biblioteca
                     }
                     else
                     {
-                      // Registrar libro (mapa: título -> autor y año)
+                        // Registrar libro (mapa: título -> autor y año)
                         Console.Write("Ingrese autor del libro: ");
                         string autor = Console.ReadLine();
 
@@ -58,11 +58,33 @@ public class Biblioteca
                         anios[contador] = anio;
                         contador++;
 
-                        Console.WriteLine("Libro registrado correctamente.\n");  
+                        Console.WriteLine("Libro registrado correctamente.\n");
                     }
-               }
+                }
+
+                else
+                {
+                    Console.WriteLine("No se pueden registrar más libros, capacidad máxima alcanzada.\n");
+                }
             }
 
+            // Opción 2: Mostrar Libros
+            else if (opcion == 2)
+            {
+                if (contador == 0)
+                {
+                    Console.WriteLine("No hay libros registrados.\n");
+                }
+                else
+                {
+                    Console.WriteLine("\nLIBROS REGISTRADOS EN LA BIBLIOTECA:");
+                    for (int i = 0; i < contador; i++)
+                    {
+                        Console.WriteLine("Título: " + titulos[i] + " | Autor: " + autores[i] + " | Año: " + anios[i]);
+                    }
+                    Console.WriteLine();
+                }
+            }
         }
     }
 
