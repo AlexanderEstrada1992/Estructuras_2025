@@ -20,8 +20,18 @@ public class Biblioteca
             Console.WriteLine("0. Salir");
             Console.Write("Seleccione una opción: ");
             opcion = int.Parse(Console.ReadLine());
-            
-             
+
+            // Opción 1: Registrar libro aplicando conjunto (no duplicados) y mapa
+            if (opcion == 1)
+            {
+                if (contador < 50)
+                {
+                    Console.Write("Ingrese título del libro: ");
+                    string titulo = Console.ReadLine();
+                    
+               }
+            }
+
         }
     }
 
