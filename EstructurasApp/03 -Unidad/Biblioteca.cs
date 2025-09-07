@@ -109,6 +109,12 @@ public class Biblioteca
                 }
             }
 
+            // Opción 0: Salir
+            else if (opcion == 0)
+            {
+                Console.WriteLine("Saliendo del programa...");
+            }
+
         }
     }
 
