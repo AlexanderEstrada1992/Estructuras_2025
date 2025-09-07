@@ -29,6 +29,25 @@ public class Biblioteca
                     Console.Write("Ingrese título del libro: ");
                     string titulo = Console.ReadLine();
                     
+                    // Verificar si el título ya existe (conjunto)
+                    bool existe = false;
+                    for (int i = 0; i < contador; i++)
+                    {
+                        if (titulos[i] == titulo)
+                        {
+                            existe = true;
+                            break;
+                        }
+                    }
+
+                    if (existe)
+                    {
+                        Console.WriteLine("El libro ya está registrado (conjunto de títulos).\n");
+                    }
+                    else
+                    {
+                        
+                    }
                }
             }
 
