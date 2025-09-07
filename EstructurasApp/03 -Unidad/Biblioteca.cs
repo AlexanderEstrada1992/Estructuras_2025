@@ -85,6 +85,32 @@ public class Biblioteca
                     Console.WriteLine();
                 }
             }
+
+            // Opción 3: Buscar libro por título aplicando mapa (clave - valor)
+            else if (opcion == 3)
+            {
+                Console.Write("Ingrese el título a buscar: ");
+                string buscarTitulo = Console.ReadLine();
+                bool encontrado = false;
+
+                for (int i = 0; i < contador; i++)
+                {
+                    if (titulos[i] == buscarTitulo)
+                    {
+                        Console.WriteLine("Libro encontrado: Título: " + titulos[i] + " | Autor: " + autores[i] + " | Año: " + anios[i]);
+                        encontrado = true;
+                        break;
+                    }
+                }
+
+                if (!encontrado)
+                {
+                    Console.WriteLine("No se encontró ningún libro con ese título.\n");
+                }
+            }
+
+
+
         }
     }
 
