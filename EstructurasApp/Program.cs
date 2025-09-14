@@ -6,7 +6,7 @@ Console.WriteLine("=======================");
 Console.WriteLine();
 
 
-
+CatalogoRevistas.run();
 
 
 
