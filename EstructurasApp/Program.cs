@@ -1,11 +1,16 @@
 ﻿Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
 Console.WriteLine("=============================");
 Console.WriteLine();
-Console.WriteLine("Registro de libros en una biblioteca");
+Console.WriteLine("Catálogo de revistas");
 Console.WriteLine("=======================");
 Console.WriteLine();
 
-Biblioteca.run();
+
+
+
+
+
+
 
 
 
@@ -28,7 +33,7 @@ Biblioteca.run();
 //Parque.run();
 //vacunas.run();
 //Diccionario.run();
-
+//Biblioteca.run();
 
 
 
