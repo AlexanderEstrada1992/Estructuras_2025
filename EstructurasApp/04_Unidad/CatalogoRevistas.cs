@@ -16,43 +16,44 @@ public class CatalogoRevistas
         revistas[8] = "Arte y Diseño";
         revistas[9] = "Educación Global";
 
-        // Variable de control para el menú
+        // Variable para controlar el menú
         int opcion = 0;
-
-        // Menú interactivo
+        // Bucle que mantiene el menú activo hasta que el usuario elija salir
         do
         {
+            // Mostrar las opciones del menú
             System.Console.WriteLine("\n--- MENÚ ---");
             System.Console.WriteLine("1. Buscar revista");
             System.Console.WriteLine("2. Salir");
             System.Console.Write("Ingrese una opción: ");
-
             opcion = int.Parse(System.Console.ReadLine());
-
-            // Evaluar la opción ingresada
+             // Evaluar la opción ingresada
             switch (opcion)
             {
                 case 1:
-                    // Solicitar el título a buscar
                     System.Console.Write("Ingrese el título a buscar: ");
                     string titulo = System.Console.ReadLine();
-
-                    // Llamar a la función de búsqueda recursiva
                     if (BuscarRecursivo(titulo, 0))
                         System.Console.WriteLine("Encontrado");
                     else
                         System.Console.WriteLine("No encontrado");
                     break;
-
                 case 2:
-                    // Opción para salir del programa
-                    System.Console.WriteLine("Saliendo del catálogo...");
+                    System.Console.WriteLine("Saliendo...");
                     break;
-
                 default:
-                    // Mensaje para opciones inválidas
-                    System.Console.WriteLine("Opción inválida, intente de nuevo.");
+                    System.Console.WriteLine("Opción inválida");
                     break;
             }
-        }
+        } while (opcion != 2);
+    }
+    // Método de búsqueda recursiva
+    static bool BuscarRecursivo(string titulo, int indice)
+    {
+        if (indice >= revistas.Length)
+            return false; 
+        if (revistas[indice].ToLower() == titulo.ToLower())
+            return true;
+        return BuscarRecursivo(titulo, indice + 1);
+    }
 }
