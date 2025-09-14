@@ -27,6 +27,32 @@ public class CatalogoRevistas
             System.Console.WriteLine("2. Salir");
             System.Console.Write("Ingrese una opción: ");
 
-            
+            opcion = int.Parse(System.Console.ReadLine());
+
+            // Evaluar la opción ingresada
+            switch (opcion)
+            {
+                case 1:
+                    // Solicitar el título a buscar
+                    System.Console.Write("Ingrese el título a buscar: ");
+                    string titulo = System.Console.ReadLine();
+
+                    // Llamar a la función de búsqueda recursiva
+                    if (BuscarRecursivo(titulo, 0))
+                        System.Console.WriteLine("Encontrado");
+                    else
+                        System.Console.WriteLine("No encontrado");
+                    break;
+
+                case 2:
+                    // Opción para salir del programa
+                    System.Console.WriteLine("Saliendo del catálogo...");
+                    break;
+
+                default:
+                    // Mensaje para opciones inválidas
+                    System.Console.WriteLine("Opción inválida, intente de nuevo.");
+                    break;
+            }
         }
 }
