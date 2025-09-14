@@ -15,5 +15,18 @@ public class CatalogoRevistas
         revistas[7] = "Innovación Empresarial";
         revistas[8] = "Arte y Diseño";
         revistas[9] = "Educación Global";
-    }
+
+        // Variable de control para el menú
+        int opcion = 0;
+
+        // Menú interactivo
+        do
+        {
+            System.Console.WriteLine("\n--- MENÚ ---");
+            System.Console.WriteLine("1. Buscar revista");
+            System.Console.WriteLine("2. Salir");
+            System.Console.Write("Ingrese una opción: ");
+
+            
+        }
 }
