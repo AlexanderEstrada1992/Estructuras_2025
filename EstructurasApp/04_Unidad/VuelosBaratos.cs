@@ -47,7 +47,7 @@ public class VuelosBaratos
 
         } while (opcion != 3); // Mientras no sea 3, el menú sigue activo
     }
-    
+
     // Método para mostrar todos los vuelos
     static void MostrarVuelos()
     {
@@ -57,6 +57,25 @@ public class VuelosBaratos
             // Imprimir cada vuelo con origen, destino y precio
             System.Console.WriteLine(origenes[i] + " -> " + destinos[i] + " | $" + precios[i]);
         }
+    }
+    
+    // Método para buscar vuelos baratos desde una ciudad específica
+    static void BuscarVuelosBaratos(string ciudad)
+    {
+        bool encontrado = false; // Variable para saber si se encontró algún vuelo
+        System.Console.WriteLine("\nVuelos baratos desde " + ciudad + ":");
+        for (int i = 0; i < origenes.Length; i++)
+        {
+            // Comparar ciudad de origen ignorando mayúsculas/minúsculas
+            // y filtrar vuelos con precio menor o igual a 55
+            if (origenes[i].ToLower() == ciudad.ToLower() && precios[i] <= 55)
+            {
+                System.Console.WriteLine(origenes[i] + " -> " + destinos[i] + " | $" + precios[i]);
+                encontrado = true;
+            }
+        }
+        if (!encontrado)
+            System.Console.WriteLine("No se encontraron vuelos baratos desde " + ciudad);
     }
 
 }
