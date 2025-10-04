@@ -15,7 +15,39 @@ public class VuelosBaratos
         origenes[4] = "Guayaquil"; destinos[4] = "Quito"; precios[4] = 55;
         origenes[5] = "Cuenca"; destinos[5] = "Manta"; precios[5] = 70;
 
-        
+        // Menú
+        int opcion = 0;
+        do
+        {
+            System.Console.WriteLine("\n--- MENÚ ---");
+            System.Console.WriteLine("1. Mostrar todos los vuelos");
+            System.Console.WriteLine("2. Buscar vuelos baratos desde una ciudad");
+            System.Console.WriteLine("3. Salir");
+            System.Console.Write("Ingrese una opción: ");
+            opcion = int.Parse(System.Console.ReadLine());
+
+            // Evaluar opción seleccionada
+            switch (opcion)
+            {
+                case 1:
+                    MostrarVuelos(); // Mostrar todos los vuelos
+                    break;
+                case 2:
+                    System.Console.Write("Ingrese ciudad de origen: ");
+                    string ciudad = System.Console.ReadLine();
+                    BuscarVuelosBaratos(ciudad); // Buscar vuelos baratos desde la ciudad indicada
+                    break;
+                case 3:
+                    System.Console.WriteLine("Saliendo..."); // Mensaje de salida
+                    break;
+                default:
+                    System.Console.WriteLine("Opción inválida"); // Validación de opción
+                    break;
+            }
+
+        } while (opcion != 3); // Mientras no sea 3, el menú sigue activo
     }
+    
+    
 
 }
