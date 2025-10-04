@@ -48,6 +48,15 @@ public class VuelosBaratos
         } while (opcion != 3); // Mientras no sea 3, el menú sigue activo
     }
     
-    
+    // Método para mostrar todos los vuelos
+    static void MostrarVuelos()
+    {
+        System.Console.WriteLine("\nLISTA DE VUELOS:");
+        for (int i = 0; i < origenes.Length; i++)
+        {
+            // Imprimir cada vuelo con origen, destino y precio
+            System.Console.WriteLine(origenes[i] + " -> " + destinos[i] + " | $" + precios[i]);
+        }
+    }
 
 }
