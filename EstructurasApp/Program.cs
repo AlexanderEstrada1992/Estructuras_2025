@@ -1,12 +1,12 @@
 ﻿Console.WriteLine("UNIVERSIDAD ESTATAL AMAZÓNICA");
 Console.WriteLine("=============================");
 Console.WriteLine();
-Console.WriteLine("Catálogo de revistas");
+Console.WriteLine("Encuentro de Vuelos Baratos");
 Console.WriteLine("=======================");
 Console.WriteLine();
 
 
-CatalogoRevistas.run();
+
 
 
 
@@ -34,7 +34,7 @@ CatalogoRevistas.run();
 //vacunas.run();
 //Diccionario.run();
 //Biblioteca.run();
-
+//CatalogoRevistas.run();
 
 
 
