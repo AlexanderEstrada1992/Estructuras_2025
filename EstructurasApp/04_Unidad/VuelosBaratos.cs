@@ -1,22 +1,22 @@
 public class VuelosBaratos
 {
-    // Arreglo estático para almacenar vuelos
-    static string[] origenes = new string[6];
-    static string[] destinos = new string[6];
-    static int[] precios = new int[6];
+    // Arreglo de nodos (ciudades)
+   static string[] ciudades = new string[4] { "Quito", "Guayaquil", "Cuenca", "Manta" };
+
+    // Matriz de adyacencia para representar precios de vuelos entre ciudades
+   
+    static int[,] precios = new int[4,4]
+    {
+        { 0, 60, 50, 45 }, // Desde Quito a Quito, Guayaquil, Cuenca, Manta
+        { 55, 0, 40, 0 },  // Desde Guayaquil a Quito, Guayaquil, Cuenca, Manta
+        { 0, 0, 0, 70 },   // Desde Cuenca a Quito, Guayaquil, Cuenca, Manta
+        { 0, 0, 0, 0 }     // Desde Manta a todas las ciudades (sin vuelos)
+    };
 
     public static void run()
     {
-        // Creación de la base de datos ficticia
-        origenes[0] = "Quito"; destinos[0] = "Guayaquil"; precios[0] = 60;
-        origenes[1] = "Quito"; destinos[1] = "Cuenca"; precios[1] = 50;
-        origenes[2] = "Quito"; destinos[2] = "Manta"; precios[2] = 45;
-        origenes[3] = "Guayaquil"; destinos[3] = "Cuenca"; precios[3] = 40;
-        origenes[4] = "Guayaquil"; destinos[4] = "Quito"; precios[4] = 55;
-        origenes[5] = "Cuenca"; destinos[5] = "Manta"; precios[5] = 70;
-
         // Menú
-        int opcion = 0;
+         int opcion = 0;
         do
         {
             System.Console.WriteLine("\n--- MENÚ ---");
@@ -27,54 +27,75 @@ public class VuelosBaratos
             opcion = int.Parse(System.Console.ReadLine());
 
             // Evaluar opción seleccionada
-            switch (opcion)
+            switch(opcion)
             {
                 case 1:
-                    MostrarVuelos(); // Mostrar todos los vuelos
+                    MostrarVuelos();
                     break;
                 case 2:
                     System.Console.Write("Ingrese ciudad de origen: ");
                     string ciudad = System.Console.ReadLine();
-                    BuscarVuelosBaratos(ciudad); // Buscar vuelos baratos desde la ciudad indicada
+                    BuscarVuelosBaratos(ciudad);
                     break;
                 case 3:
-                    System.Console.WriteLine("Saliendo..."); // Mensaje de salida
+                    System.Console.WriteLine("Saliendo...");
                     break;
                 default:
-                    System.Console.WriteLine("Opción inválida"); // Validación de opción
+                    System.Console.WriteLine("Opción inválida");
                     break;
             }
 
-        } while (opcion != 3); // Mientras no sea 3, el menú sigue activo
+        } while(opcion != 3);
     }
 
-    // Método para mostrar todos los vuelos
+    // Método para mostrar todos los vuelos en forma de grafo
     static void MostrarVuelos()
     {
         System.Console.WriteLine("\nLISTA DE VUELOS:");
-        for (int i = 0; i < origenes.Length; i++)
+        for(int i = 0; i < ciudades.Length; i++)
         {
-            // Imprimir cada vuelo con origen, destino y precio
-            System.Console.WriteLine(origenes[i] + " -> " + destinos[i] + " | $" + precios[i]);
+            for(int j = 0; j < ciudades.Length; j++)
+            {
+                if(precios[i,j] > 0)
+                {
+                    System.Console.WriteLine(ciudades[i] + " -> " + ciudades[j] + " | $" + precios[i,j]);
+                }
+            }
         }
     }
     
     // Método para buscar vuelos baratos desde una ciudad específica
     static void BuscarVuelosBaratos(string ciudad)
     {
-        bool encontrado = false; // Variable para saber si se encontró algún vuelo
-        System.Console.WriteLine("\nVuelos baratos desde " + ciudad + ":");
-        for (int i = 0; i < origenes.Length; i++)
+        int index = -1;
+        for(int i = 0; i < ciudades.Length; i++)
         {
-            // Comparar ciudad de origen ignorando mayúsculas/minúsculas
-            // y filtrar vuelos con precio menor o igual a 55
-            if (origenes[i].ToLower() == ciudad.ToLower() && precios[i] <= 55)
+            if(ciudades[i].ToLower() == ciudad.ToLower())
             {
-                System.Console.WriteLine(origenes[i] + " -> " + destinos[i] + " | $" + precios[i]);
+                index = i;
+                break;
+            }
+        }
+
+        if(index == -1)
+        {
+            System.Console.WriteLine("Ciudad no encontrada.");
+            return;
+        }
+
+        bool encontrado = false;
+        System.Console.WriteLine("\nVuelos baratos desde " + ciudad + ":");
+
+        for(int j = 0; j < ciudades.Length; j++)
+        {
+            if(precios[index,j] > 0 && precios[index,j] <= 55)
+            {
+                System.Console.WriteLine(ciudades[index] + " -> " + ciudades[j] + " | $" + precios[index,j]);
                 encontrado = true;
             }
         }
-        if (!encontrado)
+
+        if(!encontrado)
             System.Console.WriteLine("No se encontraron vuelos baratos desde " + ciudad);
     }
 
